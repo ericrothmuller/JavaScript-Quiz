@@ -9,11 +9,11 @@ document.getElementById("startbutton").addEventListener("click", function(){
     var currentTime = setInterval(function() {
         if (startTime > 0){
             var currentTime = --startTime;
-            document.getElementById("timerdiv").innerHTML = startTime;
+            document.getElementById("quizdiv").innerHTML = startTime;
         }
 
         else {
-            document.getElementById("timerdiv").innerHTML = "You ran out of time!";
+            document.getElementById("quizdiv").innerHTML = "You ran out of time!";
         }
     
     }, 1000);
