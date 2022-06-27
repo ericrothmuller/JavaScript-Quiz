@@ -30,30 +30,29 @@ var questions = [
 ]
 
 
-
 // Button that activates the timer begins here.
 
 document.getElementById("startbutton").addEventListener("click", function(){
 
 // Timer countdown is here
 
-    var startTime = 11;
+    var startTime = 10;
 
     var currentTime = setInterval(function() {
         if (startTime > 0){
             var currentTime = --startTime;
-            document.getElementById("quizdiv").innerHTML = startTime;
+            document.getElementById("timerid").innerHTML = startTime;
         }
 
         else {
-            document.getElementById("quizdiv").innerHTML = "You ran out of time!";
+            document.getElementById("timerid").innerHTML = "You ran out of time!";
         }
     
     }, 1000);
 
-    // Quiz starts here
+    document.getElementById("timerid").innerHTML = "10";
 
-    document.getElementById("quizdiv").innerHTML = "test";
+    // Quiz starts here
 
 });
 

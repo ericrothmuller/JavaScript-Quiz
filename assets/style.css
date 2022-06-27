@@ -11,6 +11,22 @@
     margin: 0px;
 }
 
+/* Header Styling */
+
+header {
+    margin-bottom: 100px;
+    width: 100vw;
+    padding: 0 10%;
+}
+
+#headerid {
+    float: left;
+}
+
+#timerid {
+    float: right;
+}
+
 h1 {
     font-size: 28px;
     font-weight: bold;
