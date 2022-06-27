@@ -9,18 +9,18 @@ document.getElementById("startbutton").addEventListener("click", function(){
     var currentTime = setInterval(function() {
         if (startTime > 0){
             var currentTime = --startTime;
-            document.getElementById("timer").innerHTML = startTime;
+            document.getElementById("timerdiv").innerHTML = startTime;
         }
 
         else {
-            document.getElementById("timer").innerHTML = "You ran out of time!";
+            document.getElementById("timerdiv").innerHTML = "You ran out of time!";
         }
     
     }, 1000);
 
     // Quiz starts here
 
-    document.getElementById("quiz").innerHTML = "test";
+    document.getElementById("quizdiv").innerHTML = "test";
 
 });
 

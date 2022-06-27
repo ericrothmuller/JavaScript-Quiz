@@ -13,6 +13,20 @@ h1 {
 main {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
     text-align: center;
     align-items: center;
+    /* background-color: blue; */
+}
+
+#timerdiv {
+    display: block;
+    background-color: green;
+}
+
+#quizdiv {
+    background-color: blueviolet;
 }
