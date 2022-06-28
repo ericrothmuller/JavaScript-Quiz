@@ -1,15 +1,9 @@
-// Global Variables
-
-// Timer countdown start time is here
-var startTime = 60;
-
-
-
 // Button that starts quiz begins here.
 
 document.getElementById("startbutton").addEventListener("click", function(){
-    // Timer starts here
-    // document.getElementById("timerid").innerHTML = startTime;
+
+    // Timer countdown start time is here
+    var startTime = 60;
 
     var currentTime = setInterval(function() {
         if (startTime > 0){
@@ -21,6 +15,7 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion1").style.display = "none";
             document.getElementById("quizquestion2").style.display = "none";
             document.getElementById("quizquestion3").style.display = "none";
+            document.getElementById("highscorescreen").style.display = "none";
             document.getElementById("losescreen").style.display = "flex";
             document.getElementById("timerid").innerHTML = "You ran out of time!";
         }
@@ -131,11 +126,16 @@ document.getElementById("startbutton").addEventListener("click", function(){
             window.alert("You scored " + startTime + "!");
             clearInterval(currentTime);
         })
-    
-        // if (currentTime === 0) {
-        //     clearInterval(currentTime);
-        // } else {
-        //     document.getElementById("timerid").innerHTML = currentTime;
-        // }
+        
+});
+
+// High Scores Button Starts Here
+document.getElementById("highscoresbutton").addEventListener("click", function(){
+
+    document.getElementById("quizquestion1").style.display = "none";
+    document.getElementById("quizquestion2").style.display = "none";
+    document.getElementById("quizquestion3").style.display = "none";
+    document.getElementById("losescreen").style.display = "none";
+    document.getElementById("highscorescreen").style.display = "flex";
 
 });
