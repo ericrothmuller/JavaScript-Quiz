@@ -38,6 +38,16 @@ h1 {
     padding: 5px;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    line-height: 30px;
+}
 /* Main Styling */
 
 main {
@@ -57,8 +67,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     background-color: blueviolet;
     width: 80vw;
     height: 50vh;
@@ -68,17 +78,21 @@ main {
 #quizquestion1 {
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     padding: 50px;
     margin: 50px;
-    width: 90%;
+    width: 50%;
     height: min-content;
     background-color: antiquewhite;
 }
 
 #quizquestion1buttons {
-    display:block;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 #quizquestion2 {
@@ -94,7 +108,11 @@ main {
 }
 
 #quizquestion2buttons {
-    display:block;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 #quizquestion3 {
@@ -110,23 +128,11 @@ main {
 }
 
 #quizquestion3buttons {
-    display:block;
-}
-
-#quizquestion4 {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     justify-content: center;
-    padding: 50px;
-    margin: 50px;
-    width: 90%;
-    height: min-content;
-    background-color: antiquewhite;
-}
-
-#quizquestion4buttons {
-    display:block;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 /* Quiz Button Styling */
