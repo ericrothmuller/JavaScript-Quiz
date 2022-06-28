@@ -96,7 +96,8 @@ document.getElementById("startbutton").addEventListener("click", function(){
         document.getElementById("quizzbutton3d").addEventListener("click", function() {
             window.alert("Correct!");
             document.getElementById("quizquestion3").style.display = "none";
-            window.alert("You scored " + startTime + "!");
+            document.getElementById("scorescreen").style.display = "flex";
+            document.getElementById("yourscore").innerHTML = startTime;
             clearInterval(currentTime);
         })
 
@@ -105,7 +106,8 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion3").style.display = "none";
             startTime -= 10;
             document.getElementById("timerid").innerHTML = startTime;
-            window.alert("You scored " + startTime + "!");
+            document.getElementById("scorescreen").style.display = "flex";
+            document.getElementById("yourscore").innerHTML = startTime;
             clearInterval(currentTime);
         })
 
@@ -114,7 +116,8 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion3").style.display = "none";
             startTime -= 10;
             document.getElementById("timerid").innerHTML = startTime;
-            window.alert("You scored " + startTime + "!");
+            document.getElementById("scorescreen").style.display = "flex";
+            document.getElementById("yourscore").innerHTML = startTime;
             clearInterval(currentTime);
         })
 
@@ -123,7 +126,8 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion3").style.display = "none";
             startTime -= 10;
             document.getElementById("timerid").innerHTML = startTime;
-            window.alert("You scored " + startTime + "!");
+            document.getElementById("scorescreen").style.display = "flex";
+            document.getElementById("yourscore").innerHTML = startTime;
             clearInterval(currentTime);
         })
         
