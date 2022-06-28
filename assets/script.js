@@ -59,5 +59,79 @@ document.getElementById("startbutton").addEventListener("click", function(){
     // Quiz starts here
 
         document.getElementById("quizquestion1").style.display = "flex";
+        
+    // Quiz Question 1
+        document.getElementById("quizzbuttonc").addEventListener("click", function() {
+            window.alert("Correct!");
+            document.getElementById("quizquestion1").style.display = "none";
+            document.getElementById("quizquestion2").style.display = "flex";
+        })
+
+        document.getElementById("quizzbuttona").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion1").style.display = "none";
+            document.getElementById("quizquestion2").style.display = "flex";
+        })
+
+        document.getElementById("quizzbuttonb").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion1").style.display = "none";
+            document.getElementById("quizquestion2").style.display = "flex";
+        })
+
+        document.getElementById("quizzbuttond").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion1").style.display = "none";
+            document.getElementById("quizquestion2").style.display = "flex";
+        })
+    
+    // Quiz Question 2
+
+        document.getElementById("quizzbutton2b").addEventListener("click", function() {
+            window.alert("Correct!");
+            document.getElementById("quizquestion2").style.display = "none";
+            document.getElementById("quizquestion3").style.display = "flex";
+        })
+
+        document.getElementById("quizzbutton2a").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion2").style.display = "none";
+            document.getElementById("quizquestion3").style.display = "flex";
+        })
+
+        document.getElementById("quizzbutton2c").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion2").style.display = "none";
+            document.getElementById("quizquestion3").style.display = "flex";
+        })
+
+        document.getElementById("quizzbutton2d").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion2").style.display = "none";
+            document.getElementById("quizquestion3").style.display = "flex";
+        })
+
+            // Quiz Question 3
+
+        document.getElementById("quizzbutton3d").addEventListener("click", function() {
+            window.alert("Correct!");
+            document.getElementById("quizquestion3").style.display = "none";
+        })
+
+        document.getElementById("quizzbutton3a").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion3").style.display = "none";
+        })
+
+        document.getElementById("quizzbutton3b").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion3").style.display = "none";
+        })
+
+        document.getElementById("quizzbutton3c").addEventListener("click", function() {
+            window.alert("Wrong!");
+            document.getElementById("quizquestion3").style.display = "none";
+        })
+        
 
 });
