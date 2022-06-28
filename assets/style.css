@@ -13,18 +13,22 @@
 
 /* Header Styling */
 
-header {
-    margin-bottom: 100px;
+#headerdiv {
+    height: 10vh;
     width: 100vw;
     padding: 0 10%;
+    background-color: aquamarine;
+    z-index: 1;
 }
 
 #headerid {
     float: left;
+    padding: 2% 0%;
 }
 
 #timerid {
     float: right;
+    padding: 2% 0%;
 }
 
 h1 {
@@ -40,14 +44,18 @@ main {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: blue;
 }
 
 #quizdiv {
     background-color: blueviolet;
+    width: 80vw;
+    height: 50vh;
+    z-index: 1;
 }
 
 /* Button Styling */

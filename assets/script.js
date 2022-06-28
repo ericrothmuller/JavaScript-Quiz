@@ -54,5 +54,7 @@ document.getElementById("startbutton").addEventListener("click", function(){
 
     // Quiz starts here
 
+    document.getElementById("quizdiv").innerHTML = "test";
+
 });
 
