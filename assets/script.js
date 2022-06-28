@@ -9,7 +9,7 @@ var startTime = 60;
 
 document.getElementById("startbutton").addEventListener("click", function(){
     // Timer starts here
-    document.getElementById("timerid").innerHTML = startTime;
+    // document.getElementById("timerid").innerHTML = startTime;
 
     var currentTime = setInterval(function() {
         if (startTime > 0){
@@ -41,19 +41,25 @@ document.getElementById("startbutton").addEventListener("click", function(){
         })
 
         document.getElementById("quizzbuttona").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion1").style.display = "none";
             document.getElementById("quizquestion2").style.display = "flex";
         })
 
         document.getElementById("quizzbuttonb").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion1").style.display = "none";
             document.getElementById("quizquestion2").style.display = "flex";
         })
 
         document.getElementById("quizzbuttond").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion1").style.display = "none";
             document.getElementById("quizquestion2").style.display = "flex";
         })
@@ -67,19 +73,25 @@ document.getElementById("startbutton").addEventListener("click", function(){
         })
 
         document.getElementById("quizzbutton2a").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion2").style.display = "none";
             document.getElementById("quizquestion3").style.display = "flex";
         })
 
         document.getElementById("quizzbutton2c").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion2").style.display = "none";
             document.getElementById("quizquestion3").style.display = "flex";
         })
 
         document.getElementById("quizzbutton2d").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("quizquestion2").style.display = "none";
             document.getElementById("quizquestion3").style.display = "flex";
         })
@@ -94,22 +106,28 @@ document.getElementById("startbutton").addEventListener("click", function(){
         })
 
         document.getElementById("quizzbutton3a").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
             document.getElementById("quizquestion3").style.display = "none";
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             window.alert("You scored " + startTime + "!");
             clearInterval(currentTime);
         })
 
         document.getElementById("quizzbutton3b").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
             document.getElementById("quizquestion3").style.display = "none";
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             window.alert("You scored " + startTime + "!");
             clearInterval(currentTime);
         })
 
         document.getElementById("quizzbutton3c").addEventListener("click", function() {
-            window.alert("Wrong!");
+            window.alert("Wrong! -10 Second Penalty Applied");
             document.getElementById("quizquestion3").style.display = "none";
+            startTime -= 10;
+            document.getElementById("timerid").innerHTML = startTime;
             window.alert("You scored " + startTime + "!");
             clearInterval(currentTime);
         })
