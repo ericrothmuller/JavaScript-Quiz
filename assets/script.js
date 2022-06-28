@@ -49,6 +49,10 @@ document.getElementById("startbutton").addEventListener("click", function(){
         }
     
         else {
+            document.getElementById("quizquestion1").style.display = "none";
+            document.getElementById("quizquestion2").style.display = "none";
+            document.getElementById("quizquestion3").style.display = "none";
+            document.getElementById("losescreen").style.display = "flex";
             document.getElementById("timerid").innerHTML = "You ran out of time!";
         }
     

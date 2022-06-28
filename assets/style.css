@@ -149,7 +149,22 @@ main {
     opacity: .8;
 }
 
-/* Button Styling */
+/* Lose Screen Styling */
+
+#losescreen {
+    display: none;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 50px;
+    margin: 50px;
+    width: 50%;
+    height: min-content;
+    background-color: antiquewhite;
+}
+
+
+/* Bottom Buttons Styling */
 
 #highscoresbutton, #startbutton {
     text-align: center;
