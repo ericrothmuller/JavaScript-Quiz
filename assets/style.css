@@ -154,13 +154,17 @@ main {
 #scorescreen {
     display: none;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     padding: 50px;
     margin: 50px;
     width: 50%;
     height: min-content;
     background-color: antiquewhite;
+}
+
+form {
+    padding-top: 20px;
 }
 
 /* Lose Screen Styling */
