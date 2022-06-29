@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
+        <!-- Header begins here -->
     <header id="headerdiv">
         <h1 id="headerid">JavaScript Code Challenge</h1>
         <h2 id="timerid">60</h2>
     </header>
+    <!-- Main begins here -->
     <main id="maindiv">
         <div id="quizdiv">
+            <!-- Start Screen begins here -->
             <span id="startscreen">
                 <h2>Welcome to JavaScript Code Challenge</h2>
                 <h2>You will have 60 seconds to answer every question.</h2>
@@ -21,6 +24,7 @@
                 <h2>Your end score will be the amount of time you have left when you finish the quiz.</h2>
                 <h2>Hit the Start Button to begin. Good luck!</h2>
             </span>
+            <!-- Quiz Question 1 Screen begins here -->
             <span id="quizquestion1">
                 <h2>Question: What is an array?</h2>
                 <p><strong>A.</strong> A sequence of one or more characters that may consist of letters, numbers, or symbols.</p>
@@ -35,6 +39,7 @@
                     <button id="quizzbuttond">D</button>
                 </span>
             </span>
+                        <!-- Quiz Question 2 Screen begins here -->
             <span id="quizquestion2">
                 <h2>What is global variables?</h2>
                 <p><strong>A.</strong> A declared variable that is limited to the scope of a block statement.</p>
@@ -49,6 +54,7 @@
                     <button id="quizzbutton2d">D</button>
                 </span>
             </span>
+                        <!-- Quiz Question 3 Screen begins here -->
             <span id="quizquestion3">
                 <h2>What is the use of isNaN function?</h2>
                 <p><strong>A.</strong> It is used to determine what operating system a user is using.</p>
@@ -63,6 +69,7 @@
                     <button id="quizzbutton3d">D</button>
                 </span>
             </span>
+                        <!-- Score Screen begins here -->
             <span id="scorescreen">
                 <h2>You scored:</h2>
                 <h2 id="yourscore"></h2>
@@ -71,17 +78,19 @@
                     <input type="text" name="initials" id="yourinitials" placeholder="Enter your initials" />
                 </form>
             </span>
+                                    <!-- Loss Screen begins here -->
             <span id="losescreen">
                 <h2>You lost because you ran out of time.</h2>
                 <h2>Please try again!</h2>
             </span>
+                                    <!-- High Scores Screen begins here -->
             <span id="highscorescreen">
                 <h2>High Scores</h2>
                 &nbsp;
                 <ul id="highscoreul"></ul>
             </span>
         </div>
-
+                        <!-- Bottom Buttons begins here -->
         <button id="startbutton" href="#">Start Quiz</button>
         <button id="highscoresbutton" href="#">View High Scores</button>
 

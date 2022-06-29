@@ -112,6 +112,14 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion3").style.display = "none";
             document.getElementById("scorescreen").style.display = "flex";
             document.getElementById("yourscore").innerHTML = startTime;
+            
+            var input = document.getElementById("yourinitials");
+
+            var saveYourScore = {
+                score: startTime,
+                initials: input.value,
+            };
+
             clearInterval(currentTime);
         })
 
@@ -122,6 +130,14 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("scorescreen").style.display = "flex";
             document.getElementById("yourscore").innerHTML = startTime;
+
+            var input = document.getElementById("yourinitials");
+
+            var saveYourScore = {
+                score: startTime,
+                initials: input.value,
+            };
+
             clearInterval(currentTime);
         })
 
@@ -132,6 +148,14 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("timerid").innerHTML = startTime;
             document.getElementById("scorescreen").style.display = "flex";
             document.getElementById("yourscore").innerHTML = startTime;
+
+            var input = document.getElementById("yourinitials");
+
+            var saveYourScore = {
+                score: startTime,
+                initials: input.value,
+            };
+
             clearInterval(currentTime);
         })
 
