@@ -16,6 +16,7 @@ document.getElementById("startbutton").addEventListener("click", function(){
             document.getElementById("quizquestion2").style.display = "none";
             document.getElementById("quizquestion3").style.display = "none";
             document.getElementById("highscorescreen").style.display = "none";
+            document.getElementById("startscreen").style.display = "none";
             document.getElementById("losescreen").style.display = "flex";
             document.getElementById("timerid").innerHTML = "You ran out of time!";
         }
@@ -24,8 +25,21 @@ document.getElementById("startbutton").addEventListener("click", function(){
 
     document.getElementById("timerid").innerHTML = startTime;
 
+    // Resets
+
+    function resetFunction() {
+        document.getElementById("quizquestion1").reset();
+        document.getElementById("quizquestion2").reset();
+        document.getElementById("quizquestion3").reset();
+        document.getElementById("highscorescreen").reset();
+        document.getElementById("losescreen").reset();
+        document.getElementById("timerid").reset();
+        document.getElementById("startscreen").reset();
+      }
+
     // Quiz starts here
 
+        document.getElementById("startscreen").style.display = "none";
         document.getElementById("quizquestion1").style.display = "flex";
         
     // Quiz Question 1
@@ -149,6 +163,7 @@ document.getElementById("highscoresbutton").addEventListener("click", function()
     document.getElementById("quizquestion3").style.display = "none";
     document.getElementById("losescreen").style.display = "none";
     document.getElementById("scorescreen").style.display = "none";
+    document.getElementById("startscreen").style.display = "none";
     document.getElementById("highscorescreen").style.display = "flex";
 
 });
